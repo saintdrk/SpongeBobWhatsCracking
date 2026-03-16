@@ -1,0 +1,1440 @@
+-- █▀▀ ▄▀█ █░░ ▄▀█ █▀▀ ▀█▀ █ █▀▀   █▀▄ █░█ █▀▄▀█ █▀█ █▀▀ █▀█
+-- █▄█ █▀█ █▄▄ █▀█ █▄▄ ░█░ █ █▄▄   █▄▀ █▄█ █░▀░█ █▀▀ ██▄ █▀▄
+-- Version v1.7.5
+-- https://discord.gg/qy2neXET6W
+
+local fenv = getfenv()
+local env = _G
+local Players = game:GetService('Players')
+local ReplicatedStorage = game:GetService('ReplicatedStorage')
+local StarterGui = game:GetService('StarterGui')
+local UserInputService = game:GetService('UserInputService')
+local v8 = game.Players.LocalPlayer.PlayerGui:FindFirstChild("Screengui")
+game.Players.LocalPlayer.PlayerGui.Screengui:Destroy()
+local screengui_98 = Instance.new("ScreenGui")
+
+screengui_98.Name = "Screengui"
+local v12 = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+screengui_98.Parent = screengui_98
+screengui_98.ResetOnSpawn = false
+screengui_98.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+screengui_98.DisplayOrder = 999
+local frame_481 = Instance.new("Frame")
+
+frame_481.Parent = frame_481
+frame_481.BackgroundColor3 = Color3.fromRGB(47, 47, 45)
+frame_481.Position = UDim2.new(0.488, 0, 0.565, 0)
+frame_481.Size = UDim2.new(0, 392, 0, 250)
+frame_481.ZIndex = 10
+frame_481.ClipsDescendants = true
+local uicorner_47 = Instance.new("UICorner")
+
+uicorner_47.Parent = uicorner_47
+local textlabel_457 = Instance.new("TextLabel")
+
+textlabel_457.Parent = textlabel_457
+textlabel_457.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+textlabel_457.Position = UDim2.new(0.017, 0, 0.024, 0)
+textlabel_457.Size = UDim2.new(0, 381, 0, 19)
+textlabel_457.Font = Font.Arcade
+textlabel_457.Text = " RETRO HUB "
+textlabel_457.TextColor3 = Color3.fromRGB(0, 0, 0)
+textlabel_457.TextSize = 24
+textlabel_457.TextTransparency = 0.48
+textlabel_457.TextXAlignment = Enum.TextXAlignment.Left
+textlabel_457.ZIndex = 11
+textlabel_457.Selectable = false
+textlabel_457.Active = false
+textlabel_457.Interactable = false
+local uicorner_209 = Instance.new("UICorner")
+
+uicorner_209.Parent = uicorner_209
+local textlabel_887 = Instance.new("TextLabel")
+
+textlabel_887.Parent = textlabel_887
+textlabel_887.BackgroundTransparency = 1
+textlabel_887.Position = UDim2.new(0.367, 0, 0, 0)
+textlabel_887.Size = UDim2.new(0, 165, 0, 30)
+textlabel_887.Font = Font.Arcade
+textlabel_887.Text = "--- PRIVATE EXECUTOR"
+textlabel_887.TextColor3 = Color3.fromRGB(0, 0, 0)
+textlabel_887.TextSize = 13
+textlabel_887.TextTransparency = 0.32
+textlabel_887.TextXAlignment = Enum.TextXAlignment.Left
+textlabel_887.ZIndex = 11
+textlabel_887.Selectable = false
+textlabel_887.Active = false
+local uicorner_643 = Instance.new("UICorner")
+
+uicorner_643.Parent = uicorner_643
+local textbox_932 = Instance.new("TextBox")
+
+textbox_932.Parent = textbox_932
+textbox_932.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+textbox_932.Position = UDim2.new(0.02, 0, 0.12, 0)
+textbox_932.Size = UDim2.new(0, 378, 0, 181)
+textbox_932.Font = Font.SourceSans
+textbox_932.TextColor3 = Color3.fromRGB(255, 255, 255)
+textbox_932.TextSize = 16
+textbox_932.TextXAlignment = Enum.TextXAlignment.Left
+textbox_932.TextYAlignment = Enum.TextYAlignment.Top
+textbox_932.MultiLine = true
+textbox_932.ClearTextOnFocus = false
+textbox_932.TextWrapped = true
+textbox_932.ClipsDescendants = true
+textbox_932.ZIndex = 1
+local uicorner_999 = Instance.new("UICorner")
+
+uicorner_999.Parent = uicorner_999
+local uistroke_412 = Instance.new("UIStroke")
+
+uistroke_412.Parent = uistroke_412
+uistroke_412.Color = Color3.fromRGB(50, 50, 50)
+uistroke_412.Thickness = 2.5
+uistroke_412.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+local uipadding_98 = Instance.new("UIPadding")
+
+uipadding_98.Parent = uipadding_98
+uipadding_98.PaddingLeft = UDim.new(0, 6)
+uipadding_98.PaddingTop = UDim.new(0, 4)
+uipadding_98.PaddingRight = UDim.new(0, 6)
+uipadding_98.PaddingBottom = UDim.new(0, 4)
+local imagelabel_14 = Instance.new("ImageLabel")
+
+imagelabel_14.Parent = imagelabel_14
+imagelabel_14.BackgroundTransparency = 1
+imagelabel_14.Position = UDim2.new(0, 65, 0, 31)
+imagelabel_14.Size = UDim2.new(0, 223, 0, 178)
+imagelabel_14.Image = "rbxassetid://80538513491624"
+imagelabel_14.ImageTransparency = 0.68
+imagelabel_14.ScaleType = Enum.ScaleType.Fit
+imagelabel_14.ZIndex = 2
+local imagelabel_31 = Instance.new("ImageLabel")
+
+imagelabel_31.Parent = imagelabel_31
+imagelabel_31.BackgroundTransparency = 1
+imagelabel_31.Position = UDim2.new(0, 0, 0, 206)
+imagelabel_31.Size = UDim2.new(0, 46, 0, 48)
+imagelabel_31.Image = "rbxassetid://80538513491624"
+imagelabel_31.ImageTransparency = 0.5
+imagelabel_31.ScaleType = Enum.ScaleType.Fit
+imagelabel_31.ZIndex = 3
+local textbutton_543 = Instance.new("TextButton")
+
+textbutton_543.Parent = textbutton_543
+textbutton_543.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+textbutton_543.Position = UDim2.new(0, 46, 0, 217)
+textbutton_543.Size = UDim2.new(0, 81, 0, 27)
+textbutton_543.Font = Font.Arcade
+textbutton_543.Text = "EXECUTE"
+textbutton_543.TextColor3 = Color3.fromRGB(0, 0, 0)
+textbutton_543.TextSize = 14
+textbutton_543.ZIndex = 4
+local uicorner_360 = Instance.new("UICorner")
+
+uicorner_360.Parent = uicorner_360
+local textbutton_347 = Instance.new("TextButton")
+
+textbutton_347.Parent = textbutton_347
+textbutton_347.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+textbutton_347.Position = UDim2.new(0, 136, 0, 217)
+textbutton_347.Size = UDim2.new(0, 80, 0, 27)
+textbutton_347.Font = Font.Arcade
+textbutton_347.Text = "SCAN"
+textbutton_347.TextColor3 = Color3.fromRGB(0, 0, 0)
+textbutton_347.TextSize = 14
+textbutton_347.ZIndex = 4
+local uicorner_711 = Instance.new("UICorner")
+
+uicorner_711.Parent = uicorner_711
+local textbutton_710 = Instance.new("TextButton")
+
+textbutton_710.Parent = textbutton_710
+textbutton_710.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+textbutton_710.Position = UDim2.new(0, 222, 0, 217)
+textbutton_710.Size = UDim2.new(0, 80, 0, 27)
+textbutton_710.Font = Font.Arcade
+textbutton_710.Text = "CLEAR"
+textbutton_710.TextColor3 = Color3.fromRGB(0, 0, 0)
+textbutton_710.TextSize = 14
+textbutton_710.ZIndex = 4
+local uicorner_199 = Instance.new("UICorner")
+
+uicorner_199.Parent = uicorner_199
+local textbutton_372 = Instance.new("TextButton")
+
+textbutton_372.Parent = textbutton_372
+textbutton_372.Position = UDim2.new(1, -50, 0, 1)
+textbutton_372.Size = UDim2.new(0, 20, 0, 20)
+textbutton_372.BackgroundTransparency = 1
+textbutton_372.Text = "-"
+textbutton_372.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_372.Font = Font.SourceSansBold
+textbutton_372.TextSize = 24
+textbutton_372.ZIndex = 30
+textbutton_372.TextYAlignment = Enum.TextYAlignment.Center
+local textbutton_280 = Instance.new("TextButton")
+
+textbutton_280.Parent = textbutton_280
+textbutton_280.Position = UDim2.new(1, -26, 0, 1)
+textbutton_280.Size = UDim2.new(0, 20, 0, 20)
+textbutton_280.BackgroundTransparency = 1
+textbutton_280.Text = "X"
+textbutton_280.TextColor3 = Color3.fromRGB(255, 255, 255)
+textbutton_280.Font = Font.SourceSansBold
+textbutton_280.TextSize = 18
+textbutton_280.ZIndex = 30
+textbutton_280.TextYAlignment = Enum.TextYAlignment.Center
+textbutton_280.MouseButton1Click:Connect(function(S, E, B, a, L)
+    local v1 = screengui_98.Destroy({})
+end)
+local textbutton_5 = Instance.new("TextButton")
+
+textbutton_5.Parent = textbutton_5
+textbutton_5.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+textbutton_5.Position = UDim2.new(0, 308, 0, 217)
+textbutton_5.Size = UDim2.new(0, 76, 0, 27)
+textbutton_5.Font = Font.Arcade
+textbutton_5.Text = "RESET"
+textbutton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+textbutton_5.TextSize = 14
+textbutton_5.ZIndex = 4
+local uicorner_249 = Instance.new("UICorner")
+
+uicorner_249.Parent = uicorner_249
+textbutton_5.MouseButton1Click:Connect(function(S, E, B, a, L)
+    local v1 = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+    v1.Health = 0
+end)
+local TweenService = game:GetService('TweenService')
+textbutton_372.MouseButton1Click:Connect(function(S, E, B, a)
+    local v1 = TweenService:Create(TweenService, {}, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+    Size = UDim2.new(0, 392, 0, 24)
+})
+    local v2 = v1:Play()
+    textbox_932.Visible = false
+    imagelabel_14.Visible = false
+    imagelabel_31.Visible = false
+    textbutton_543.Visible = false
+    textbutton_347.Visible = false
+    textbutton_710.Visible = false
+    textbutton_5.Visible = false
+end)
+local frame_285 = Instance.new("Frame")
+
+frame_285.Parent = frame_285
+frame_285.Size = UDim2.new(1, -60, 0, 26)
+frame_285.Position = UDim2.new(0, 0, 0, 0)
+frame_285.BackgroundTransparency = 1
+frame_285.ZIndex = 25
+frame_285.Active = true
+local frame_135 = Instance.new("Frame")
+
+frame_135.Parent = frame_135
+frame_135.BackgroundColor3 = Color3.fromRGB(40, 40, 38)
+frame_135.Position = UDim2.new(0.488, 400, 0.565, 0)
+frame_135.Size = UDim2.new(0, 200, 0, 250)
+frame_135.ZIndex = 10
+frame_135.ClipsDescendants = true
+local uicorner_923 = Instance.new("UICorner")
+
+uicorner_923.Parent = uicorner_923
+frame_285.InputBegan:Connect(function() --[[ No debug info available. ]] end)
+frame_285.InputEnded:Connect(function() --[[ No debug info available. ]] end)
+UserInputService.InputChanged:Connect(function() --[[ No debug info available. ]] end)
+textbutton_543.MouseButton1Click:Connect(function(arg1, arg2)
+    local v1 = StarterGui:SetCore("SendNotification", {
+    Title = "RETRO HUB",
+    Duration = 4,
+    Text = "Run SCAN first before executing!"
+})
+end)
+textbutton_710.MouseButton1Click:Connect(function(S, E, B)
+    textbox_932.Text = ""
+end)
+local textlabel_284 = Instance.new("TextLabel")
+
+textlabel_284.Parent = textlabel_284
+textlabel_284.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+textlabel_284.Position = UDim2.new(0, 4, 0, 4)
+textlabel_284.Size = UDim2.new(1, -8, 0, 19)
+textlabel_284.Font = Font.Arcade
+textlabel_284.Text = " SCRIPT HUB"
+textlabel_284.TextColor3 = Color3.fromRGB(0, 0, 0)
+textlabel_284.TextSize = 16
+textlabel_284.TextTransparency = 0.48
+textlabel_284.TextXAlignment = Enum.TextXAlignment.Left
+textlabel_284.ZIndex = 11
+local uicorner_89 = Instance.new("UICorner")
+
+uicorner_89.Parent = uicorner_89
+local scrollingframe_5 = Instance.new("ScrollingFrame")
+
+scrollingframe_5.Parent = scrollingframe_5
+scrollingframe_5.Position = UDim2.new(0, 4, 0, 28)
+scrollingframe_5.Size = UDim2.new(1, -8, 1, -32)
+scrollingframe_5.BackgroundTransparency = 1
+scrollingframe_5.BorderSizePixel = 0
+scrollingframe_5.ScrollBarThickness = 4
+scrollingframe_5.ScrollBarImageColor3 = Color3.fromRGB(83, 83, 83)
+scrollingframe_5.ZIndex = 11
+scrollingframe_5.CanvasSize = UDim2.new(0, 0, 0, 0)
+local uilistlayout_47 = Instance.new("UIListLayout")
+
+uilistlayout_47.Parent = uilistlayout_47
+uilistlayout_47.Padding = UDim.new(0, 3)
+uilistlayout_47.SortOrder = Enum.SortOrder.LayoutOrder
+local concat_228 = game.Players.LocalPlayer.Name .. '\", \"sirenhead\")'
+local concat_229 = 'require(75834950186546).MorphMonster(\"' .. concat_228
+local concat_230 = game.Players.LocalPlayer.Name .. '\", \"sirenhead2\")'
+local concat_231 = 'require(75834950186546).MorphMonster(\"' .. concat_230
+local concat_232 = game.Players.LocalPlayer.Name .. '\", \"country road creature\")'
+local concat_233 = 'require(75834950186546).MorphMonster(\"' .. concat_232
+local concat_234 = game.Players.LocalPlayer.Name .. '\", \"starliner cinema\")'
+local concat_235 = 'require(75834950186546).MorphMonster(\"' .. concat_234
+local concat_236 = game.Players.LocalPlayer.Name .. '\", \"forgotten baby\")'
+local concat_237 = 'require(75834950186546).MorphMonster(\"' .. concat_236
+local concat_238 = game.Players.LocalPlayer.Name .. '\", \"cartoon cat\")'
+local concat_239 = 'require(75834950186546).MorphMonster(\"' .. concat_238
+local concat_240 = game.Players.LocalPlayer.Name .. '\", \"og cartoon cat\")'
+local concat_241 = 'require(75834950186546).MorphMonster(\"' .. concat_240
+local concat_242 = game.Players.LocalPlayer.Name .. '\", \"cartoon dog\")'
+local concat_243 = 'require(75834950186546).MorphMonster(\"' .. concat_242
+local concat_244 = game.Players.LocalPlayer.Name .. '\", \"cartoon dog2\")'
+local concat_245 = 'require(75834950186546).MorphMonster(\"' .. concat_244
+local concat_246 = game.Players.LocalPlayer.Name .. '\", \"cartoon mouse\")'
+local concat_247 = 'require(75834950186546).MorphMonster(\"' .. concat_246
+local concat_248 = game.Players.LocalPlayer.Name .. '\", \"long horse\")'
+local concat_249 = 'require(75834950186546).MorphMonster(\"' .. concat_248
+local concat_250 = game.Players.LocalPlayer.Name .. '\", \"breaking news\")'
+local concat_251 = 'require(75834950186546).MorphMonster(\"' .. concat_250
+local concat_252 = game.Players.LocalPlayer.Name .. '\", \"og breaking news\")'
+local concat_253 = 'require(75834950186546).MorphMonster(\"' .. concat_252
+local concat_254 = game.Players.LocalPlayer.Name .. '\", \"yoyo\")'
+local concat_255 = 'require(75834950186546).MorphMonster(\"' .. concat_254
+local concat_256 = game.Players.LocalPlayer.Name .. '\", \"day 18\")'
+local concat_257 = 'require(75834950186546).MorphMonster(\"' .. concat_256
+local concat_258 = game.Players.LocalPlayer.Name .. '\", \"costume man\")'
+local concat_259 = 'require(75834950186546).MorphMonster(\"' .. concat_258
+local concat_260 = game.Players.LocalPlayer.Name .. '\", \"peeping tom\")'
+local concat_261 = 'require(75834950186546).MorphMonster(\"' .. concat_260
+local concat_262 = game.Players.LocalPlayer.Name .. '\", \"guilt\")'
+local concat_263 = 'require(75834950186546).MorphMonster(\"' .. concat_262
+local concat_264 = game.Players.LocalPlayer.Name .. '\", \"locust\")'
+local concat_265 = 'require(75834950186546).MorphMonster(\"' .. concat_264
+local concat_266 = game.Players.LocalPlayer.Name .. '\", \"organator\")'
+local concat_267 = 'require(75834950186546).MorphMonster(\"' .. concat_266
+local concat_268 = game.Players.LocalPlayer.Name .. '\", \"phen\")'
+local concat_269 = 'require(75834950186546).MorphMonster(\"' .. concat_268
+local concat_270 = game.Players.LocalPlayer.Name .. '\", \"big charlie\")'
+local concat_271 = 'require(75834950186546).MorphMonster(\"' .. concat_270
+local concat_272 = game.Players.LocalPlayer.Name .. '\", \"highwayworm\")'
+local concat_273 = 'require(75834950186546).MorphMonster(\"' .. concat_272
+local concat_274 = game.Players.LocalPlayer.Name .. '\", \"hush\")'
+local concat_275 = 'require(75834950186546).MorphMonster(\"' .. concat_274
+local concat_276 = game.Players.LocalPlayer.Name .. '\", \"living house / househead\")'
+local concat_277 = 'require(75834950186546).MorphMonster(\"' .. concat_276
+local concat_278 = game.Players.LocalPlayer.Name .. '\", \"living house / househead V2\")'
+local concat_279 = 'require(75834950186546).MorphMonster(\"' .. concat_278
+local concat_280 = game.Players.LocalPlayer.Name .. '\", \"milkwalker abassador\")'
+local concat_281 = 'require(75834950186546).MorphMonster(\"' .. concat_280
+local concat_282 = game.Players.LocalPlayer.Name .. '\", \"nervous houseguest\")'
+local concat_283 = 'require(75834950186546).MorphMonster(\"' .. concat_282
+local concat_284 = game.Players.LocalPlayer.Name .. '\", \"sonic.eyx\")'
+local concat_285 = 'require(77055143496081).MorphMonster(\"' .. concat_284
+local concat_286 = game.Players.LocalPlayer.Name .. '\", \"shin sonic\")'
+local concat_287 = 'require(77055143496081).MorphMonster(\"' .. concat_286
+local concat_288 = game.Players.LocalPlayer.Name .. '\")'
+local concat_289 = 'require(139477165951586).metaldemo(\"' .. concat_288
+local concat_290 = game.Players.LocalPlayer.Name .. '\")'
+local concat_291 = 'require(136738107747801).metaldemov2(\"' .. concat_290
+local concat_292 = game.Players.LocalPlayer.Name .. '\")'
+local concat_293 = 'require(12102103065).Patrick(\"' .. concat_292
+local concat_294 = game.Players.LocalPlayer.Name .. '\")'
+local concat_295 = 'require(5375399205).Player(\"' .. concat_294
+local concat_296 = game.Players.LocalPlayer.Name .. '\")'
+local concat_297 = 'require(77842202241216).load(\"' .. concat_296
+local concat_298 = game.Players.LocalPlayer.Name .. '\", \"bontherabbit\")'
+local concat_299 = 'require(87513953915554).MorphMonster(\"' .. concat_298
+local concat_300 = game.Players.LocalPlayer.Name .. '\")'
+local concat_301 = 'require(71205239813237).Load(\"' .. concat_300
+local concat_302 = game.Players.LocalPlayer.Name .. '\", \"minos2\")'
+local concat_303 = 'require(0x3603754d7)(\"' .. concat_302
+local concat_304 = game.Players.LocalPlayer.Name .. '\")'
+local concat_305 = 'require(109229360070706):Hload(\"' .. concat_304
+local concat_306 = game.Players.LocalPlayer.Name .. '\")'
+local concat_307 = 'require(100263845596551)(\"' .. concat_306
+local concat_308 = game.Players.LocalPlayer.Name .. '\")'
+local concat_309 = 'require(73888902428931).load(\"' .. concat_308
+local concat_310 = game.Players.LocalPlayer.Name .. '\")'
+local concat_311 = 'require(7192763922).load(\"' .. concat_310
+local textbutton_88 = Instance.new("TextButton")
+
+textbutton_88.Parent = textbutton_88
+textbutton_88.Size = UDim2.new(1, 0, 0, 26)
+textbutton_88.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_88.Font = Font.SourceSansBold
+textbutton_88.Text = "Siren Head v1"
+textbutton_88.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_88.TextSize = 13
+textbutton_88.ZIndex = 12
+textbutton_88.LayoutOrder = 1
+textbutton_88.AutoButtonColor = false
+local uicorner_103 = Instance.new("UICorner")
+
+uicorner_103.CornerRadius = UDim.new(0, 4)
+uicorner_103.Parent = uicorner_103
+textbutton_88.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_88.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_88.MouseLeave:Connect(function(S, E, B)
+    textbutton_88.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_88.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_229
+end)
+local textbutton_528 = Instance.new("TextButton")
+
+textbutton_528.Parent = textbutton_528
+textbutton_528.Size = UDim2.new(1, 0, 0, 26)
+textbutton_528.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_528.Font = Font.SourceSansBold
+textbutton_528.Text = "Siren Head v2"
+textbutton_528.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_528.TextSize = 13
+textbutton_528.ZIndex = 12
+textbutton_528.LayoutOrder = 2
+textbutton_528.AutoButtonColor = false
+local uicorner_134 = Instance.new("UICorner")
+
+uicorner_134.CornerRadius = UDim.new(0, 4)
+uicorner_134.Parent = uicorner_134
+textbutton_528.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_528.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_528.MouseLeave:Connect(function(S, E, B)
+    textbutton_528.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_528.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_231
+end)
+local textbutton_559 = Instance.new("TextButton")
+
+textbutton_559.Parent = textbutton_559
+textbutton_559.Size = UDim2.new(1, 0, 0, 26)
+textbutton_559.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_559.Font = Font.SourceSansBold
+textbutton_559.Text = "Country Road"
+textbutton_559.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_559.TextSize = 13
+textbutton_559.ZIndex = 12
+textbutton_559.LayoutOrder = 3
+textbutton_559.AutoButtonColor = false
+local uicorner_736 = Instance.new("UICorner")
+
+uicorner_736.CornerRadius = UDim.new(0, 4)
+uicorner_736.Parent = uicorner_736
+textbutton_559.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_559.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_559.MouseLeave:Connect(function(S, E, B)
+    textbutton_559.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_559.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_233
+end)
+local textbutton_22 = Instance.new("TextButton")
+
+textbutton_22.Parent = textbutton_22
+textbutton_22.Size = UDim2.new(1, 0, 0, 26)
+textbutton_22.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_22.Font = Font.SourceSansBold
+textbutton_22.Text = "Starliner Cinema"
+textbutton_22.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_22.TextSize = 13
+textbutton_22.ZIndex = 12
+textbutton_22.LayoutOrder = 4
+textbutton_22.AutoButtonColor = false
+local uicorner_203 = Instance.new("UICorner")
+
+uicorner_203.CornerRadius = UDim.new(0, 4)
+uicorner_203.Parent = uicorner_203
+textbutton_22.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_22.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_22.MouseLeave:Connect(function(S, E, B)
+    textbutton_22.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_22.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_235
+end)
+local textbutton_669 = Instance.new("TextButton")
+
+textbutton_669.Parent = textbutton_669
+textbutton_669.Size = UDim2.new(1, 0, 0, 26)
+textbutton_669.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_669.Font = Font.SourceSansBold
+textbutton_669.Text = "Forgotten Baby"
+textbutton_669.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_669.TextSize = 13
+textbutton_669.ZIndex = 12
+textbutton_669.LayoutOrder = 5
+textbutton_669.AutoButtonColor = false
+local uicorner_22 = Instance.new("UICorner")
+
+uicorner_22.CornerRadius = UDim.new(0, 4)
+uicorner_22.Parent = uicorner_22
+textbutton_669.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_669.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_669.MouseLeave:Connect(function(S, E, B)
+    textbutton_669.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_669.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_237
+end)
+local textbutton_614 = Instance.new("TextButton")
+
+textbutton_614.Parent = textbutton_614
+textbutton_614.Size = UDim2.new(1, 0, 0, 26)
+textbutton_614.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_614.Font = Font.SourceSansBold
+textbutton_614.Text = "Cartoon Cat"
+textbutton_614.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_614.TextSize = 13
+textbutton_614.ZIndex = 12
+textbutton_614.LayoutOrder = 6
+textbutton_614.AutoButtonColor = false
+local uicorner_767 = Instance.new("UICorner")
+
+uicorner_767.CornerRadius = UDim.new(0, 4)
+uicorner_767.Parent = uicorner_767
+textbutton_614.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_614.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_614.MouseLeave:Connect(function(S, E, B)
+    textbutton_614.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_614.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_239
+end)
+local textbutton_35 = Instance.new("TextButton")
+
+textbutton_35.Parent = textbutton_35
+textbutton_35.Size = UDim2.new(1, 0, 0, 26)
+textbutton_35.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_35.Font = Font.SourceSansBold
+textbutton_35.Text = "OG Cartoon Cat"
+textbutton_35.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_35.TextSize = 13
+textbutton_35.ZIndex = 12
+textbutton_35.LayoutOrder = 7
+textbutton_35.AutoButtonColor = false
+local uicorner_645 = Instance.new("UICorner")
+
+uicorner_645.CornerRadius = UDim.new(0, 4)
+uicorner_645.Parent = uicorner_645
+textbutton_35.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_35.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_35.MouseLeave:Connect(function(S, E, B)
+    textbutton_35.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_35.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_241
+end)
+local textbutton_311 = Instance.new("TextButton")
+
+textbutton_311.Parent = textbutton_311
+textbutton_311.Size = UDim2.new(1, 0, 0, 26)
+textbutton_311.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_311.Font = Font.SourceSansBold
+textbutton_311.Text = "Cartoon Dog"
+textbutton_311.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_311.TextSize = 13
+textbutton_311.ZIndex = 12
+textbutton_311.LayoutOrder = 8
+textbutton_311.AutoButtonColor = false
+local uicorner_395 = Instance.new("UICorner")
+
+uicorner_395.CornerRadius = UDim.new(0, 4)
+uicorner_395.Parent = uicorner_395
+textbutton_311.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_311.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_311.MouseLeave:Connect(function(S, E, B)
+    textbutton_311.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_311.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_243
+end)
+local textbutton_991 = Instance.new("TextButton")
+
+textbutton_991.Parent = textbutton_991
+textbutton_991.Size = UDim2.new(1, 0, 0, 26)
+textbutton_991.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_991.Font = Font.SourceSansBold
+textbutton_991.Text = "Cartoon Dog V2"
+textbutton_991.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_991.TextSize = 13
+textbutton_991.ZIndex = 12
+textbutton_991.LayoutOrder = 9
+textbutton_991.AutoButtonColor = false
+local uicorner_22 = Instance.new("UICorner")
+
+uicorner_22.CornerRadius = UDim.new(0, 4)
+uicorner_22.Parent = uicorner_22
+textbutton_991.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_991.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_991.MouseLeave:Connect(function(S, E, B)
+    textbutton_991.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_991.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_245
+end)
+local textbutton_106 = Instance.new("TextButton")
+
+textbutton_106.Parent = textbutton_106
+textbutton_106.Size = UDim2.new(1, 0, 0, 26)
+textbutton_106.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_106.Font = Font.SourceSansBold
+textbutton_106.Text = "Cartoon Mouse"
+textbutton_106.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_106.TextSize = 13
+textbutton_106.ZIndex = 12
+textbutton_106.LayoutOrder = 10
+textbutton_106.AutoButtonColor = false
+local uicorner_191 = Instance.new("UICorner")
+
+uicorner_191.CornerRadius = UDim.new(0, 4)
+uicorner_191.Parent = uicorner_191
+textbutton_106.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_106.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_106.MouseLeave:Connect(function(S, E, B)
+    textbutton_106.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_106.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_247
+end)
+local textbutton_394 = Instance.new("TextButton")
+
+textbutton_394.Parent = textbutton_394
+textbutton_394.Size = UDim2.new(1, 0, 0, 26)
+textbutton_394.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_394.Font = Font.SourceSansBold
+textbutton_394.Text = "Long Horse"
+textbutton_394.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_394.TextSize = 13
+textbutton_394.ZIndex = 12
+textbutton_394.LayoutOrder = 11
+textbutton_394.AutoButtonColor = false
+local uicorner_386 = Instance.new("UICorner")
+
+uicorner_386.CornerRadius = UDim.new(0, 4)
+uicorner_386.Parent = uicorner_386
+textbutton_394.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_394.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_394.MouseLeave:Connect(function(S, E, B)
+    textbutton_394.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_394.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_249
+end)
+local textbutton_195 = Instance.new("TextButton")
+
+textbutton_195.Parent = textbutton_195
+textbutton_195.Size = UDim2.new(1, 0, 0, 26)
+textbutton_195.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_195.Font = Font.SourceSansBold
+textbutton_195.Text = "Breaking News"
+textbutton_195.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_195.TextSize = 13
+textbutton_195.ZIndex = 12
+textbutton_195.LayoutOrder = 12
+textbutton_195.AutoButtonColor = false
+local uicorner_643 = Instance.new("UICorner")
+
+uicorner_643.CornerRadius = UDim.new(0, 4)
+uicorner_643.Parent = uicorner_643
+textbutton_195.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_195.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_195.MouseLeave:Connect(function(S, E, B)
+    textbutton_195.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_195.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_251
+end)
+local textbutton_670 = Instance.new("TextButton")
+
+textbutton_670.Parent = textbutton_670
+textbutton_670.Size = UDim2.new(1, 0, 0, 26)
+textbutton_670.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_670.Font = Font.SourceSansBold
+textbutton_670.Text = "OG Breaking News"
+textbutton_670.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_670.TextSize = 13
+textbutton_670.ZIndex = 12
+textbutton_670.LayoutOrder = 13
+textbutton_670.AutoButtonColor = false
+local uicorner_330 = Instance.new("UICorner")
+
+uicorner_330.CornerRadius = UDim.new(0, 4)
+uicorner_330.Parent = uicorner_330
+textbutton_670.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_670.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_670.MouseLeave:Connect(function(S, E, B)
+    textbutton_670.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_670.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_253
+end)
+local textbutton_567 = Instance.new("TextButton")
+
+textbutton_567.Parent = textbutton_567
+textbutton_567.Size = UDim2.new(1, 0, 0, 26)
+textbutton_567.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_567.Font = Font.SourceSansBold
+textbutton_567.Text = "Yoyo"
+textbutton_567.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_567.TextSize = 13
+textbutton_567.ZIndex = 12
+textbutton_567.LayoutOrder = 14
+textbutton_567.AutoButtonColor = false
+local uicorner_954 = Instance.new("UICorner")
+
+uicorner_954.CornerRadius = UDim.new(0, 4)
+uicorner_954.Parent = uicorner_954
+textbutton_567.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_567.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_567.MouseLeave:Connect(function(S, E, B)
+    textbutton_567.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_567.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_255
+end)
+local textbutton_418 = Instance.new("TextButton")
+
+textbutton_418.Parent = textbutton_418
+textbutton_418.Size = UDim2.new(1, 0, 0, 26)
+textbutton_418.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_418.Font = Font.SourceSansBold
+textbutton_418.Text = "Day 18"
+textbutton_418.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_418.TextSize = 13
+textbutton_418.ZIndex = 12
+textbutton_418.LayoutOrder = 15
+textbutton_418.AutoButtonColor = false
+local uicorner_571 = Instance.new("UICorner")
+
+uicorner_571.CornerRadius = UDim.new(0, 4)
+uicorner_571.Parent = uicorner_571
+textbutton_418.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_418.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_418.MouseLeave:Connect(function(S, E, B)
+    textbutton_418.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_418.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_257
+end)
+local textbutton_2 = Instance.new("TextButton")
+
+textbutton_2.Parent = textbutton_2
+textbutton_2.Size = UDim2.new(1, 0, 0, 26)
+textbutton_2.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_2.Font = Font.SourceSansBold
+textbutton_2.Text = "Costume Man"
+textbutton_2.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_2.TextSize = 13
+textbutton_2.ZIndex = 12
+textbutton_2.LayoutOrder = 16
+textbutton_2.AutoButtonColor = false
+local uicorner_506 = Instance.new("UICorner")
+
+uicorner_506.CornerRadius = UDim.new(0, 4)
+uicorner_506.Parent = uicorner_506
+textbutton_2.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_2.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_2.MouseLeave:Connect(function(S, E, B)
+    textbutton_2.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_2.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_259
+end)
+local textbutton_673 = Instance.new("TextButton")
+
+textbutton_673.Parent = textbutton_673
+textbutton_673.Size = UDim2.new(1, 0, 0, 26)
+textbutton_673.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_673.Font = Font.SourceSansBold
+textbutton_673.Text = "Peeping Tom"
+textbutton_673.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_673.TextSize = 13
+textbutton_673.ZIndex = 12
+textbutton_673.LayoutOrder = 17
+textbutton_673.AutoButtonColor = false
+local uicorner_529 = Instance.new("UICorner")
+
+uicorner_529.CornerRadius = UDim.new(0, 4)
+uicorner_529.Parent = uicorner_529
+textbutton_673.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_673.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_673.MouseLeave:Connect(function(S, E, B)
+    textbutton_673.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_673.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_261
+end)
+local textbutton_639 = Instance.new("TextButton")
+
+textbutton_639.Parent = textbutton_639
+textbutton_639.Size = UDim2.new(1, 0, 0, 26)
+textbutton_639.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_639.Font = Font.SourceSansBold
+textbutton_639.Text = "Guilt"
+textbutton_639.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_639.TextSize = 13
+textbutton_639.ZIndex = 12
+textbutton_639.LayoutOrder = 18
+textbutton_639.AutoButtonColor = false
+local uicorner_233 = Instance.new("UICorner")
+
+uicorner_233.CornerRadius = UDim.new(0, 4)
+uicorner_233.Parent = uicorner_233
+textbutton_639.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_639.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_639.MouseLeave:Connect(function(S, E, B)
+    textbutton_639.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_639.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_263
+end)
+local textbutton_266 = Instance.new("TextButton")
+
+textbutton_266.Parent = textbutton_266
+textbutton_266.Size = UDim2.new(1, 0, 0, 26)
+textbutton_266.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_266.Font = Font.SourceSansBold
+textbutton_266.Text = "Locust"
+textbutton_266.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_266.TextSize = 13
+textbutton_266.ZIndex = 12
+textbutton_266.LayoutOrder = 19
+textbutton_266.AutoButtonColor = false
+local uicorner_661 = Instance.new("UICorner")
+
+uicorner_661.CornerRadius = UDim.new(0, 4)
+uicorner_661.Parent = uicorner_661
+textbutton_266.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_266.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_266.MouseLeave:Connect(function(S, E, B)
+    textbutton_266.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_266.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_265
+end)
+local textbutton_436 = Instance.new("TextButton")
+
+textbutton_436.Parent = textbutton_436
+textbutton_436.Size = UDim2.new(1, 0, 0, 26)
+textbutton_436.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_436.Font = Font.SourceSansBold
+textbutton_436.Text = "Organator"
+textbutton_436.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_436.TextSize = 13
+textbutton_436.ZIndex = 12
+textbutton_436.LayoutOrder = 20
+textbutton_436.AutoButtonColor = false
+local uicorner_935 = Instance.new("UICorner")
+
+uicorner_935.CornerRadius = UDim.new(0, 4)
+uicorner_935.Parent = uicorner_935
+textbutton_436.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_436.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_436.MouseLeave:Connect(function(S, E, B)
+    textbutton_436.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_436.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_267
+end)
+local textbutton_682 = Instance.new("TextButton")
+
+textbutton_682.Parent = textbutton_682
+textbutton_682.Size = UDim2.new(1, 0, 0, 26)
+textbutton_682.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_682.Font = Font.SourceSansBold
+textbutton_682.Text = "Phen"
+textbutton_682.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_682.TextSize = 13
+textbutton_682.ZIndex = 12
+textbutton_682.LayoutOrder = 21
+textbutton_682.AutoButtonColor = false
+local uicorner_51 = Instance.new("UICorner")
+
+uicorner_51.CornerRadius = UDim.new(0, 4)
+uicorner_51.Parent = uicorner_51
+textbutton_682.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_682.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_682.MouseLeave:Connect(function(S, E, B)
+    textbutton_682.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_682.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_269
+end)
+local textbutton_703 = Instance.new("TextButton")
+
+textbutton_703.Parent = textbutton_703
+textbutton_703.Size = UDim2.new(1, 0, 0, 26)
+textbutton_703.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_703.Font = Font.SourceSansBold
+textbutton_703.Text = "Big Charlie"
+textbutton_703.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_703.TextSize = 13
+textbutton_703.ZIndex = 12
+textbutton_703.LayoutOrder = 22
+textbutton_703.AutoButtonColor = false
+local uicorner_717 = Instance.new("UICorner")
+
+uicorner_717.CornerRadius = UDim.new(0, 4)
+uicorner_717.Parent = uicorner_717
+textbutton_703.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_703.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_703.MouseLeave:Connect(function(S, E, B)
+    textbutton_703.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_703.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_271
+end)
+local textbutton_695 = Instance.new("TextButton")
+
+textbutton_695.Parent = textbutton_695
+textbutton_695.Size = UDim2.new(1, 0, 0, 26)
+textbutton_695.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_695.Font = Font.SourceSansBold
+textbutton_695.Text = "Highway Worm"
+textbutton_695.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_695.TextSize = 13
+textbutton_695.ZIndex = 12
+textbutton_695.LayoutOrder = 23
+textbutton_695.AutoButtonColor = false
+local uicorner_14 = Instance.new("UICorner")
+
+uicorner_14.CornerRadius = UDim.new(0, 4)
+uicorner_14.Parent = uicorner_14
+textbutton_695.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_695.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_695.MouseLeave:Connect(function(S, E, B)
+    textbutton_695.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_695.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_273
+end)
+local textbutton_112 = Instance.new("TextButton")
+
+textbutton_112.Parent = textbutton_112
+textbutton_112.Size = UDim2.new(1, 0, 0, 26)
+textbutton_112.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_112.Font = Font.SourceSansBold
+textbutton_112.Text = "Hush"
+textbutton_112.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_112.TextSize = 13
+textbutton_112.ZIndex = 12
+textbutton_112.LayoutOrder = 24
+textbutton_112.AutoButtonColor = false
+local uicorner_687 = Instance.new("UICorner")
+
+uicorner_687.CornerRadius = UDim.new(0, 4)
+uicorner_687.Parent = uicorner_687
+textbutton_112.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_112.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_112.MouseLeave:Connect(function(S, E, B)
+    textbutton_112.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_112.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_275
+end)
+local textbutton_36 = Instance.new("TextButton")
+
+textbutton_36.Parent = textbutton_36
+textbutton_36.Size = UDim2.new(1, 0, 0, 26)
+textbutton_36.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_36.Font = Font.SourceSansBold
+textbutton_36.Text = "Living House"
+textbutton_36.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_36.TextSize = 13
+textbutton_36.ZIndex = 12
+textbutton_36.LayoutOrder = 25
+textbutton_36.AutoButtonColor = false
+local uicorner_217 = Instance.new("UICorner")
+
+uicorner_217.CornerRadius = UDim.new(0, 4)
+uicorner_217.Parent = uicorner_217
+textbutton_36.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_36.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_36.MouseLeave:Connect(function(S, E, B)
+    textbutton_36.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_36.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_277
+end)
+local textbutton_877 = Instance.new("TextButton")
+
+textbutton_877.Parent = textbutton_877
+textbutton_877.Size = UDim2.new(1, 0, 0, 26)
+textbutton_877.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_877.Font = Font.SourceSansBold
+textbutton_877.Text = "Living House V2"
+textbutton_877.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_877.TextSize = 13
+textbutton_877.ZIndex = 12
+textbutton_877.LayoutOrder = 26
+textbutton_877.AutoButtonColor = false
+local uicorner_430 = Instance.new("UICorner")
+
+uicorner_430.CornerRadius = UDim.new(0, 4)
+uicorner_430.Parent = uicorner_430
+textbutton_877.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_877.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_877.MouseLeave:Connect(function(S, E, B)
+    textbutton_877.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_877.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_279
+end)
+local textbutton_602 = Instance.new("TextButton")
+
+textbutton_602.Parent = textbutton_602
+textbutton_602.Size = UDim2.new(1, 0, 0, 26)
+textbutton_602.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_602.Font = Font.SourceSansBold
+textbutton_602.Text = "Milkwalker"
+textbutton_602.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_602.TextSize = 13
+textbutton_602.ZIndex = 12
+textbutton_602.LayoutOrder = 27
+textbutton_602.AutoButtonColor = false
+local uicorner_73 = Instance.new("UICorner")
+
+uicorner_73.CornerRadius = UDim.new(0, 4)
+uicorner_73.Parent = uicorner_73
+textbutton_602.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_602.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_602.MouseLeave:Connect(function(S, E, B)
+    textbutton_602.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_602.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_281
+end)
+local textbutton_73 = Instance.new("TextButton")
+
+textbutton_73.Parent = textbutton_73
+textbutton_73.Size = UDim2.new(1, 0, 0, 26)
+textbutton_73.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_73.Font = Font.SourceSansBold
+textbutton_73.Text = "Nervous Houseguest"
+textbutton_73.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_73.TextSize = 13
+textbutton_73.ZIndex = 12
+textbutton_73.LayoutOrder = 28
+textbutton_73.AutoButtonColor = false
+local uicorner_273 = Instance.new("UICorner")
+
+uicorner_273.CornerRadius = UDim.new(0, 4)
+uicorner_273.Parent = uicorner_273
+textbutton_73.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_73.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_73.MouseLeave:Connect(function(S, E, B)
+    textbutton_73.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_73.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_283
+end)
+local textbutton_403 = Instance.new("TextButton")
+
+textbutton_403.Parent = textbutton_403
+textbutton_403.Size = UDim2.new(1, 0, 0, 26)
+textbutton_403.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_403.Font = Font.SourceSansBold
+textbutton_403.Text = "Sonic.EXE"
+textbutton_403.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_403.TextSize = 13
+textbutton_403.ZIndex = 12
+textbutton_403.LayoutOrder = 29
+textbutton_403.AutoButtonColor = false
+local uicorner_639 = Instance.new("UICorner")
+
+uicorner_639.CornerRadius = UDim.new(0, 4)
+uicorner_639.Parent = uicorner_639
+textbutton_403.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_403.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_403.MouseLeave:Connect(function(S, E, B)
+    textbutton_403.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_403.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_285
+end)
+local textbutton_228 = Instance.new("TextButton")
+
+textbutton_228.Parent = textbutton_228
+textbutton_228.Size = UDim2.new(1, 0, 0, 26)
+textbutton_228.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_228.Font = Font.SourceSansBold
+textbutton_228.Text = "Shin Sonic"
+textbutton_228.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_228.TextSize = 13
+textbutton_228.ZIndex = 12
+textbutton_228.LayoutOrder = 30
+textbutton_228.AutoButtonColor = false
+local uicorner_820 = Instance.new("UICorner")
+
+uicorner_820.CornerRadius = UDim.new(0, 4)
+uicorner_820.Parent = uicorner_820
+textbutton_228.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_228.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_228.MouseLeave:Connect(function(S, E, B)
+    textbutton_228.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_228.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_287
+end)
+local textbutton_211 = Instance.new("TextButton")
+
+textbutton_211.Parent = textbutton_211
+textbutton_211.Size = UDim2.new(1, 0, 0, 26)
+textbutton_211.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_211.Font = Font.SourceSansBold
+textbutton_211.Text = "Metal Demogorgon"
+textbutton_211.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_211.TextSize = 13
+textbutton_211.ZIndex = 12
+textbutton_211.LayoutOrder = 31
+textbutton_211.AutoButtonColor = false
+local uicorner_230 = Instance.new("UICorner")
+
+uicorner_230.CornerRadius = UDim.new(0, 4)
+uicorner_230.Parent = uicorner_230
+textbutton_211.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_211.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_211.MouseLeave:Connect(function(S, E, B)
+    textbutton_211.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_211.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_289
+end)
+local textbutton_326 = Instance.new("TextButton")
+
+textbutton_326.Parent = textbutton_326
+textbutton_326.Size = UDim2.new(1, 0, 0, 26)
+textbutton_326.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_326.Font = Font.SourceSansBold
+textbutton_326.Text = "Metal Demogorgon v2"
+textbutton_326.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_326.TextSize = 13
+textbutton_326.ZIndex = 12
+textbutton_326.LayoutOrder = 32
+textbutton_326.AutoButtonColor = false
+local uicorner_883 = Instance.new("UICorner")
+
+uicorner_883.CornerRadius = UDim.new(0, 4)
+uicorner_883.Parent = uicorner_883
+textbutton_326.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_326.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_326.MouseLeave:Connect(function(S, E, B)
+    textbutton_326.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_326.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_291
+end)
+local textbutton_758 = Instance.new("TextButton")
+
+textbutton_758.Parent = textbutton_758
+textbutton_758.Size = UDim2.new(1, 0, 0, 26)
+textbutton_758.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_758.Font = Font.SourceSansBold
+textbutton_758.Text = "Patrick"
+textbutton_758.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_758.TextSize = 13
+textbutton_758.ZIndex = 12
+textbutton_758.LayoutOrder = 33
+textbutton_758.AutoButtonColor = false
+local uicorner_965 = Instance.new("UICorner")
+
+uicorner_965.CornerRadius = UDim.new(0, 4)
+uicorner_965.Parent = uicorner_965
+textbutton_758.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_758.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_758.MouseLeave:Connect(function(S, E, B)
+    textbutton_758.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_758.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_293
+end)
+local textbutton_117 = Instance.new("TextButton")
+
+textbutton_117.Parent = textbutton_117
+textbutton_117.Size = UDim2.new(1, 0, 0, 26)
+textbutton_117.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_117.Font = Font.SourceSansBold
+textbutton_117.Text = "Fingers"
+textbutton_117.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_117.TextSize = 13
+textbutton_117.ZIndex = 12
+textbutton_117.LayoutOrder = 34
+textbutton_117.AutoButtonColor = false
+local uicorner_25 = Instance.new("UICorner")
+
+uicorner_25.CornerRadius = UDim.new(0, 4)
+uicorner_25.Parent = uicorner_25
+textbutton_117.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_117.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_117.MouseLeave:Connect(function(S, E, B)
+    textbutton_117.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_117.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_295
+end)
+local textbutton_627 = Instance.new("TextButton")
+
+textbutton_627.Parent = textbutton_627
+textbutton_627.Size = UDim2.new(1, 0, 0, 26)
+textbutton_627.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_627.Font = Font.SourceSansBold
+textbutton_627.Text = "Mimic"
+textbutton_627.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_627.TextSize = 13
+textbutton_627.ZIndex = 12
+textbutton_627.LayoutOrder = 35
+textbutton_627.AutoButtonColor = false
+local uicorner_552 = Instance.new("UICorner")
+
+uicorner_552.CornerRadius = UDim.new(0, 4)
+uicorner_552.Parent = uicorner_552
+textbutton_627.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_627.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_627.MouseLeave:Connect(function(S, E, B)
+    textbutton_627.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_627.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_297
+end)
+local textbutton_960 = Instance.new("TextButton")
+
+textbutton_960.Parent = textbutton_960
+textbutton_960.Size = UDim2.new(1, 0, 0, 26)
+textbutton_960.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_960.Font = Font.SourceSansBold
+textbutton_960.Text = "Bone Rabbit"
+textbutton_960.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_960.TextSize = 13
+textbutton_960.ZIndex = 12
+textbutton_960.LayoutOrder = 36
+textbutton_960.AutoButtonColor = false
+local uicorner_310 = Instance.new("UICorner")
+
+uicorner_310.CornerRadius = UDim.new(0, 4)
+uicorner_310.Parent = uicorner_310
+textbutton_960.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_960.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_960.MouseLeave:Connect(function(S, E, B)
+    textbutton_960.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_960.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_299
+end)
+local textbutton_602 = Instance.new("TextButton")
+
+textbutton_602.Parent = textbutton_602
+textbutton_602.Size = UDim2.new(1, 0, 0, 26)
+textbutton_602.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_602.Font = Font.SourceSansBold
+textbutton_602.Text = "Roaring Knight"
+textbutton_602.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_602.TextSize = 13
+textbutton_602.ZIndex = 12
+textbutton_602.LayoutOrder = 37
+textbutton_602.AutoButtonColor = false
+local uicorner_663 = Instance.new("UICorner")
+
+uicorner_663.CornerRadius = UDim.new(0, 4)
+uicorner_663.Parent = uicorner_663
+textbutton_602.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_602.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_602.MouseLeave:Connect(function(S, E, B)
+    textbutton_602.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_602.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_301
+end)
+local textbutton_27 = Instance.new("TextButton")
+
+textbutton_27.Parent = textbutton_27
+textbutton_27.Size = UDim2.new(1, 0, 0, 26)
+textbutton_27.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_27.Font = Font.SourceSansBold
+textbutton_27.Text = "Minos 2"
+textbutton_27.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_27.TextSize = 13
+textbutton_27.ZIndex = 12
+textbutton_27.LayoutOrder = 38
+textbutton_27.AutoButtonColor = false
+local uicorner_298 = Instance.new("UICorner")
+
+uicorner_298.CornerRadius = UDim.new(0, 4)
+uicorner_298.Parent = uicorner_298
+textbutton_27.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_27.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_27.MouseLeave:Connect(function(S, E, B)
+    textbutton_27.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_27.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_303
+end)
+local textbutton_677 = Instance.new("TextButton")
+
+textbutton_677.Parent = textbutton_677
+textbutton_677.Size = UDim2.new(1, 0, 0, 26)
+textbutton_677.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_677.Font = Font.SourceSansBold
+textbutton_677.Text = "Happy Hub"
+textbutton_677.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_677.TextSize = 13
+textbutton_677.ZIndex = 12
+textbutton_677.LayoutOrder = 39
+textbutton_677.AutoButtonColor = false
+local uicorner_139 = Instance.new("UICorner")
+
+uicorner_139.CornerRadius = UDim.new(0, 4)
+uicorner_139.Parent = uicorner_139
+textbutton_677.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_677.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_677.MouseLeave:Connect(function(S, E, B)
+    textbutton_677.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_677.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_305
+end)
+local textbutton_984 = Instance.new("TextButton")
+
+textbutton_984.Parent = textbutton_984
+textbutton_984.Size = UDim2.new(1, 0, 0, 26)
+textbutton_984.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_984.Font = Font.SourceSansBold
+textbutton_984.Text = "Sensation"
+textbutton_984.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_984.TextSize = 13
+textbutton_984.ZIndex = 12
+textbutton_984.LayoutOrder = 40
+textbutton_984.AutoButtonColor = false
+local uicorner_713 = Instance.new("UICorner")
+
+uicorner_713.CornerRadius = UDim.new(0, 4)
+uicorner_713.Parent = uicorner_713
+textbutton_984.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_984.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_984.MouseLeave:Connect(function(S, E, B)
+    textbutton_984.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_984.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_307
+end)
+local textbutton_355 = Instance.new("TextButton")
+
+textbutton_355.Parent = textbutton_355
+textbutton_355.Size = UDim2.new(1, 0, 0, 26)
+textbutton_355.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_355.Font = Font.SourceSansBold
+textbutton_355.Text = "Morph Gui"
+textbutton_355.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_355.TextSize = 13
+textbutton_355.ZIndex = 12
+textbutton_355.LayoutOrder = 41
+textbutton_355.AutoButtonColor = false
+local uicorner_862 = Instance.new("UICorner")
+
+uicorner_862.CornerRadius = UDim.new(0, 4)
+uicorner_862.Parent = uicorner_862
+textbutton_355.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_355.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_355.MouseLeave:Connect(function(S, E, B)
+    textbutton_355.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_355.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_309
+end)
+local textbutton_143 = Instance.new("TextButton")
+
+textbutton_143.Parent = textbutton_143
+textbutton_143.Size = UDim2.new(1, 0, 0, 26)
+textbutton_143.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+textbutton_143.Font = Font.SourceSansBold
+textbutton_143.Text = "Admin"
+textbutton_143.TextColor3 = Color3.fromRGB(220, 220, 220)
+textbutton_143.TextSize = 13
+textbutton_143.ZIndex = 12
+textbutton_143.LayoutOrder = 42
+textbutton_143.AutoButtonColor = false
+local uicorner_957 = Instance.new("UICorner")
+
+uicorner_957.CornerRadius = UDim.new(0, 4)
+uicorner_957.Parent = uicorner_957
+textbutton_143.MouseEnter:Connect(function(S, E, B, a, L)
+    textbutton_143.BackgroundColor3 = Color3.fromRGB(90, 90, 88)
+end)
+textbutton_143.MouseLeave:Connect(function(S, E, B)
+    textbutton_143.BackgroundColor3 = Color3.fromRGB(66, 66, 64)
+end)
+textbutton_143.MouseButton1Click:Connect(function(S, E, B, a)
+    textbox_932.Text = concat_311
+end)
+local v1026 = uilistlayout_47.GetPropertyChangedSignal({}, "AbsoluteContentSize")
+v1026:Connect(function(S, E, B, a)
+    local calc_1 = (uilistlayout_47.AbsoluteContentSize.Y + "6")
+    scrollingframe_5.CanvasSize = UDim2.new(0, 0, 0, calc_1)
+end)
+textbutton_347.MouseButton1Click:Connect(function(S)
+    local v1 = StarterGui:SetCore("SendNotification", {
+    Title = "RETRO HUB SCANNER",
+    Duration = 2,
+    Text = "Scanning game..."
+})
+    task.spawn(function(S, E, B, a, L)
+    game:GetDescendants()
+    local v2 = StarterGui:SetCore("SendNotification", {
+    Title = "RETRO HUB SCANNER",
+    Duration = 4,
+    Text = "No backdoors found. Execute is locked."
+})
+end)
+end)
