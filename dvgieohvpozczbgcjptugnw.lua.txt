@@ -1,8 +1,3 @@
--- █▀▀ ▄▀█ █░░ ▄▀█ █▀▀ ▀█▀ █ █▀▀   █▀▄ █░█ █▀▄▀█ █▀█ █▀▀ █▀█
--- █▄█ █▀█ █▄▄ █▀█ █▄▄ ░█░ █ █▄▄   █▄▀ █▄█ █░▀░█ █▀▀ ██▄ █▀▄
--- Version v1.7.5
--- https://discord.gg/qy2neXET6W
-
 local fenv = getfenv()
 local env = _G
 local Players = game:GetService('Players')
@@ -37,7 +32,7 @@ textlabel_457.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
 textlabel_457.Position = UDim2.new(0.017, 0, 0.024, 0)
 textlabel_457.Size = UDim2.new(0, 381, 0, 19)
 textlabel_457.Font = Font.Arcade
-textlabel_457.Text = " RETRO HUB "
+textlabel_457.Text = " EXP FUN HUB "
 textlabel_457.TextColor3 = Color3.fromRGB(0, 0, 0)
 textlabel_457.TextSize = 24
 textlabel_457.TextTransparency = 0.48
@@ -244,7 +239,7 @@ frame_285.InputEnded:Connect(function() --[[ No debug info available. ]] end)
 UserInputService.InputChanged:Connect(function() --[[ No debug info available. ]] end)
 textbutton_543.MouseButton1Click:Connect(function(arg1, arg2)
     local v1 = StarterGui:SetCore("SendNotification", {
-    Title = "RETRO HUB",
+    Title = "EXP FUN HUB",
     Duration = 4,
     Text = "Run SCAN first before executing!"
 })
@@ -1425,14 +1420,14 @@ v1026:Connect(function(S, E, B, a)
 end)
 textbutton_347.MouseButton1Click:Connect(function(S)
     local v1 = StarterGui:SetCore("SendNotification", {
-    Title = "RETRO HUB SCANNER",
+    Title = "EXP FUN HUB SCANNER",
     Duration = 2,
     Text = "Scanning game..."
 })
     task.spawn(function(S, E, B, a, L)
     game:GetDescendants()
     local v2 = StarterGui:SetCore("SendNotification", {
-    Title = "RETRO HUB SCANNER",
+    Title = "EXP FUN HUB SCANNER",
     Duration = 4,
     Text = "No backdoors found. Execute is locked."
 })
